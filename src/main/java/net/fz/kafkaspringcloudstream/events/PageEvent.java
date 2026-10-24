@@ -1,4 +1,6 @@
 package net.fz.kafkaspringcloudstream.events;
 
-public class PageEvent {
+import java.util.Date;
+
+public record PageEvent(String name, String user, Date date,long duration) {
 }
